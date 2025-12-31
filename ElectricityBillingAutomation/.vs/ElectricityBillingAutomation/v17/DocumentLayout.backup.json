@@ -5,6 +5,26 @@
     {
       "AbsoluteMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|c:\\asp.net_training\\electricitybillingautomation\\login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|solutionrelative:login.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|c:\\asp.net_training\\electricitybillingautomation\\login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|solutionrelative:login.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|c:\\asp.net_training\\electricitybillingautomation\\addelectricitybill.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|solutionrelative:addelectricitybill.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|c:\\asp.net_training\\electricitybillingautomation\\viewbills.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|solutionrelative:viewbills.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|c:\\asp.net_training\\electricitybillingautomation\\addelectricitybill.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|solutionrelative:addelectricitybill.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|c:\\asp.net_training\\electricitybillingautomation\\viewbills.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{049C9F4E-A216-4B7D-BAB2-D8AAFFDA428F}|ElectricityBillingAutomation.csproj|solutionrelative:viewbills.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +34,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewBills.aspx.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\ViewBills.aspx.cs",
+              "RelativeDocumentMoniker": "ViewBills.aspx.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\ViewBills.aspx.cs",
+              "RelativeToolTip": "ViewBills.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T07:24:02.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddElectricityBill.aspx.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\AddElectricityBill.aspx.cs",
+              "RelativeDocumentMoniker": "AddElectricityBill.aspx.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\AddElectricityBill.aspx.cs",
+              "RelativeToolTip": "AddElectricityBill.aspx.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T07:23:43.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.aspx.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\Login.aspx.cs",
+              "RelativeDocumentMoniker": "Login.aspx.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\Login.aspx.cs",
+              "RelativeToolTip": "Login.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-31T07:19:02.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewBills.aspx",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\ViewBills.aspx",
+              "RelativeDocumentMoniker": "ViewBills.aspx",
+              "ToolTip": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\ViewBills.aspx",
+              "RelativeToolTip": "ViewBills.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-31T07:17:08.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddElectricityBill.aspx",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\AddElectricityBill.aspx",
+              "RelativeDocumentMoniker": "AddElectricityBill.aspx",
+              "ToolTip": "C:\\ASP.Net_Training\\ElectricityBillingAutomation\\AddElectricityBill.aspx",
+              "RelativeToolTip": "AddElectricityBill.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-31T07:17:03.038Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,10 +117,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2025-12-28T10:40:05.191Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         }

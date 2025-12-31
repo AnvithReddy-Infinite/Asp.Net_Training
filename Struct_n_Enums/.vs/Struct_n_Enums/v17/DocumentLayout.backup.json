@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ASP.Net_Training\\Struct_n_Enums\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|Struct_n_Enums||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|c:\\asp.net_training\\struct_n_enums\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|c:\\asp.net_training\\struct_n_enums\\structeg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|solutionrelative:structeg2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|c:\\asp.net_training\\struct_n_enums\\enumeg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|solutionrelative:enumeg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C171E988-66FC-4797-ADD5-90C65C381A52}|Struct_n_Enums.csproj|c:\\asp.net_training\\struct_n_enums\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Struct_n_Enums",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\Struct_n_Enums\\Struct_n_Enums.csproj",
+              "RelativeDocumentMoniker": "Struct_n_Enums.csproj",
+              "ToolTip": "C:\\ASP.Net_Training\\Struct_n_Enums\\Struct_n_Enums.csproj*",
+              "RelativeToolTip": "Struct_n_Enums.csproj*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-29T09:34:23.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StructEg2.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\Struct_n_Enums\\StructEg2.cs",
+              "RelativeDocumentMoniker": "StructEg2.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\Struct_n_Enums\\StructEg2.cs",
+              "RelativeToolTip": "StructEg2.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T09:28:25.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnumEg.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\Struct_n_Enums\\EnumEg.cs",
+              "RelativeDocumentMoniker": "EnumEg.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\Struct_n_Enums\\EnumEg.cs",
+              "RelativeToolTip": "EnumEg.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T09:25:49.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\Struct_n_Enums\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\Struct_n_Enums\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAYwB8AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T07:28:11.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

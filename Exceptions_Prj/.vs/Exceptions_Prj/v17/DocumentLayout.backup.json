@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ASP.Net_Training\\Exceptions_Prj\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3C9B24-E6A9-4B69-97EC-832C18A19A2B}|Exceptions_Prj.csproj|c:\\asp.net_training\\exceptions_prj\\err.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B3C9B24-E6A9-4B69-97EC-832C18A19A2B}|Exceptions_Prj.csproj|solutionrelative:err.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B3C9B24-E6A9-4B69-97EC-832C18A19A2B}|Exceptions_Prj.csproj|c:\\asp.net_training\\exceptions_prj\\err.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7B3C9B24-E6A9-4B69-97EC-832C18A19A2B}|Exceptions_Prj.csproj|solutionrelative:err.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "err.aspx.cs",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\Exceptions_Prj\\err.aspx.cs",
+              "RelativeDocumentMoniker": "err.aspx.cs",
+              "ToolTip": "C:\\ASP.Net_Training\\Exceptions_Prj\\err.aspx.cs",
+              "RelativeToolTip": "err.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T12:37:22.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "err.aspx",
+              "DocumentMoniker": "C:\\ASP.Net_Training\\Exceptions_Prj\\err.aspx",
+              "RelativeDocumentMoniker": "err.aspx",
+              "ToolTip": "C:\\ASP.Net_Training\\Exceptions_Prj\\err.aspx",
+              "RelativeToolTip": "err.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-29T12:37:16.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
