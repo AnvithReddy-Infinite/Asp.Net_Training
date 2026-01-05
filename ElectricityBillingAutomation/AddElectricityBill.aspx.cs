@@ -37,14 +37,22 @@ namespace ElectricityBillingAutomation
                 }
 
                 ElectricityBill bill = new ElectricityBill();
-                bill.ConsumerNumber = consumerNumber;   
+                bill.ConsumerNumber = consumerNumber;
                 bill.ConsumerName = consumerName;
                 bill.UnitsConsumed = unitsConsumed;
+                bill.BillMonth = ddlMonth.SelectedValue;
+                bill.BillYear = Convert.ToInt32(txtYear.Text.Trim());
 
                 ElectricityBoard board = new ElectricityBoard();
                 board.CalculateBill(bill);
-
                 board.AddBill(bill);
+
+                List<ElectricityBill> recent = new List<ElectricityBill>();
+                recent.Add(bill);
+
+                gvLatestBill.DataSource = recent;
+                gvLatestBill.DataBind();
+
 
                 lblMessage.ForeColor = System.Drawing.Color.Green;
                 lblMessage.Text = "Electricity bill added successfully.";
@@ -52,18 +60,20 @@ namespace ElectricityBillingAutomation
                 txtConsumerNumber.Text = "";
                 txtConsumerName.Text = "";
                 txtUnitsConsumed.Text = "";
+                txtYear.Text = "";
             }
             catch (FormatException ex)
             {
                 lblMessage.ForeColor = System.Drawing.Color.Red;
                 lblMessage.Text = ex.Message;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 lblMessage.ForeColor = System.Drawing.Color.Red;
-                lblMessage.Text = "Unexpected error occurred. Please try again.";
+                lblMessage.Text = ex.Message;
             }
         }
+
 
         protected void btnLogout_Click(object sender, EventArgs e)
         {

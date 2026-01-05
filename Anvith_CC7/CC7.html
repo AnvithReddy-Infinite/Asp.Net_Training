@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Challenge 7 - Anvith</title>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table, td {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Code Challenge 7</h2>
+
+<!------------------------------------------------------>
+<!-- Q1: Write a JavaScript program to calculate multiplication 
+ and division of two numbers (input from user).  -->
+
+<!--
+<h3>Q1: Multiplication & Division</h3>
+<input type="number" id="firstValue" placeholder="Enter first number">
+<br>
+<br>
+<input type="number" id="secondValue" placeholder="Enter second number">
+<br><br>
+<button onclick="calculateResult()">Calculate</button>
+<p id="calcOutput"></p>
+
+<script>
+    function calculateResult() {
+        let numA = Number(document.getElementById("firstValue").value);
+        let numB = Number(document.getElementById("secondValue").value);
+
+        let multiply = numA * numB;
+        let divide = numB !== 0 ? (numA / numB) : "Cannot divide by zero";
+
+        document.getElementById("calcOutput").innerText =
+            "Multiplication: " + multiply + " | Division: " + divide;
+    }
+</script>
+-->
+
+
+
+<!------------------------------------------------------>
+<!-- Q2: Write a JavaScript for loop that will iterate from 0 to 15. 
+ For each iteration, it will check if the current number is odd or even, 
+ and display a message to the screen.   -->
+
+<!--
+<h3>Q2: Odd or Even</h3>
+<div id="oddEvenOutput"></div>
+
+<script>
+    let displayText = "";
+    for (let counter = 0; counter <= 15; counter++) {
+        if (counter % 2 === 0) {
+            displayText += counter + " is even<br>";
+        } else {
+            displayText += counter + " is odd<br>";
+        }
+    }
+    document.getElementById("oddEvenOutput").innerHTML = displayText;
+</script>
+-->
+
+
+
+<!------------------------------------------------------>
+<!-- Q3: Write a JavaScript program that creates a button 
+ and add a click event listener to log a message when it's clicked.  -->
+
+<!--
+<h3>Q3: Button Click Event</h3>
+<button id="clickBtn">Click Me</button>
+
+<script>
+    document.getElementById("clickBtn").addEventListener("click", function () {
+        console.log("Button was clicked successfully");
+        alert("Button Clicked!");
+    });
+</script>
+-->
+
+
+
+<!------------------------------------------------------>
+<!-- Q4: Use and write the correct selector to hide all odd table rows in a table -->
+
+<!--
+<h3>Q4: Hide Odd Table Rows</h3>
+<table>
+    <tr><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr><td>Row 3</td></tr>
+    <tr><td>Row 4</td></tr>
+</table>
+
+<script>
+    $("tr:odd").hide();
+</script>
+-->
+ 
+
+
+<!------------------------------------------------------>
+<!-- Q5: Find all h1 elements that are children of a div element and apply a background to them. -->
+
+<!--
+<h3>Q5: h1 inside div</h3>
+<div>
+    <h1>Heading One</h1>
+    <h1>Heading Two</h1>
+</div>
+
+<script>
+    $("div > h1").addClass("highlight");
+</script>
+-->
+
+
+
+<!------------------------------------------------------>
+<!-- Q6: Write a jQuery Code to get a single element from a selection.  -->
+
+<!--
+<h3>Q6: Get Single Element</h3>
+<ul>
+    <li>CSHARP</li>
+    <li>SQL</li>
+    <li>ADO</li>
+</ul>
+
+<script>
+    let singleItem = $("li").eq(1);
+    alert(singleItem.text());
+</script>
+-->
+
+
+
+<!------------------------------------------------------>
+<!-- Q7: Write a jQuery Code to add a tag at the beginning of 
+ the list item, containing the index of the list item Sample: -->
+
+<!--
+<h3>Q7: Add Index to List</h3>
+<ul id="techList">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JS</li>
+    <li>jquery</li>
+    <li>BootStrap</li>
+</ul>
+
+<script>
+    $("#techList li").each(function (index) {
+        $(this).prepend(index + ") ");
+    });
+</script>
+-->
+
+
+
+<!------------------------------------------------------>
+<!-- Q8: Append a <p> element with a text message when an <input> field is changed.  -->
+
+<!--
+<h3>Q8: Input Change</h3>
+<input type="text" id="nameInput" placeholder="Type something">
+
+<script>
+    $("#nameInput").on("change", function () {
+        $("body").append("<p>Input field's value has changed</p>");
+    });
+</script>
+-->
+
+</body>
+</html>

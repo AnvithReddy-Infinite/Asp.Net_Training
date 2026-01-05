@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System;
 using System.Text.RegularExpressions;
 
 namespace ElectricityBillingAutomation
@@ -12,6 +12,8 @@ namespace ElectricityBillingAutomation
         private string consumerName;
         private int unitsConsumed;
         private double billAmount;
+        private string billMonth;
+        private int billYear;
 
         public string ConsumerNumber
         {
@@ -20,7 +22,7 @@ namespace ElectricityBillingAutomation
             {
                 if (!Regex.IsMatch(value, @"^EB\d{5}$"))
                 {
-                    throw new FormatException("Invalid Consumer Number");
+                    throw new FormatException("Consumer Number must be in format EB12345");
                 }
                 consumerNumber = value;
             }
@@ -43,5 +45,18 @@ namespace ElectricityBillingAutomation
             get { return billAmount; }
             set { billAmount = value; }
         }
+
+        public string BillMonth
+        {
+            get { return billMonth; }
+            set { billMonth = value; }
+        }
+
+        public int BillYear
+        {
+            get { return billYear; }
+            set { billYear = value; }
+        }
     }
 }
+

@@ -40,6 +40,19 @@ namespace ElectricityBillingAutomation
             }
         }
 
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            ElectricityBoard board = new ElectricityBoard();
+
+            string consumerNo = txtSearchConsumer.Text.Trim();
+            int year = Convert.ToInt32(txtSearchYear.Text.Trim());
+
+            gvYearlyBills.DataSource =
+                board.GetBillsByConsumerAndYear(consumerNo, year);
+            gvYearlyBills.DataBind();
+        }
+
+
         protected void btnLogout_Click(object sender, EventArgs e)
         {
             Session.Clear();

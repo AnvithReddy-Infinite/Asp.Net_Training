@@ -36,11 +36,53 @@
 
 <br />
 
+<h3>View Bills By Consumer & Year</h3>
+
+Consumer Number:
+<asp:TextBox ID="txtSearchConsumer" runat="server"></asp:TextBox>
+
+Year:
+<asp:TextBox ID="txtSearchYear" runat="server"></asp:TextBox>
+
+<asp:Button ID="btnSearch" runat="server"
+            Text="Search"
+            OnClick="btnSearch_Click" />
+
+<br /><br />
+<asp:GridView ID="gvYearlyBills" runat="server" AutoGenerateColumns="False">
+    <Columns>
+        <asp:BoundField DataField="ConsumerNumber" HeaderText="Consumer Number" />
+        <asp:BoundField DataField="ConsumerName" HeaderText="Consumer Name" />
+        <asp:BoundField DataField="UnitsConsumed" HeaderText="Units Consumed" />
+        <asp:TemplateField HeaderText="Bill Amount">
+            <ItemTemplate>
+                Rs.<%# Eval("BillAmount") %>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:BoundField DataField="BillMonth" HeaderText="Month" />
+        <asp:BoundField DataField="BillYear" HeaderText="Year" />
+    </Columns>
+</asp:GridView>
+
+
 <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
 
 <br /><br />
 
-<asp:GridView ID="gvBills" runat="server" AutoGenerateColumns="true"></asp:GridView>
+<asp:GridView ID="gvBills" runat="server" AutoGenerateColumns="False">
+    <Columns>
+        <asp:BoundField DataField="ConsumerNumber" HeaderText="Consumer Number" />
+        <asp:BoundField DataField="ConsumerName" HeaderText="Consumer Name" />
+        <asp:BoundField DataField="UnitsConsumed" HeaderText="Units Consumed" />
+        <asp:TemplateField HeaderText="Bill Amount">
+            <ItemTemplate>
+                Rs.<%# Eval("BillAmount") %>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:BoundField DataField="BillMonth" HeaderText="Month" />
+        <asp:BoundField DataField="BillYear" HeaderText="Year" />
+    </Columns>
+</asp:GridView>
 
 <br />
 

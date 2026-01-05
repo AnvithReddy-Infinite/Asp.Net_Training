@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+<h2>Index View of the Data Controller</h2>
+@*<h2>@ViewBag.data</h2>
+
+    @foreach(var item in Model)
+                {
+                    <p>@item</p>
+                }
+    <hr/>
+    <p>@ViewBag.data1</p>
+    <p>@ViewData["data2"]</p>*@
+
+@foreach (var item in Model)
+{
+    <p>@item</p>
+}

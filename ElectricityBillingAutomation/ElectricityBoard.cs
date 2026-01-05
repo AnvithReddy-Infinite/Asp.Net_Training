@@ -51,29 +51,74 @@ namespace ElectricityBillingAutomation
             ebill.BillAmount = totalAmount;
         }
 
-        public void AddBill(ElectricityBill ebill)
+        public void AddBill(ElectricityBill bill)
         {
-            DBHandler dbHandler = new DBHandler();
+            DBHandler db = new DBHandler();
 
-            using (SqlConnection connection = dbHandler.GetConnection())
+            using (SqlConnection con = db.GetConnection())
             {
-                string insertQuery =
-                    "INSERT INTO ElectricityBill " +
-                    "(consumer_number, consumer_name, units_consumed, bill_amount) " +
-                    "VALUES (@consumerNumber, @consumerName, @unitsConsumed, @billAmount)";
+                con.Open();
 
-                SqlCommand command = new SqlCommand(insertQuery, connection);
+                if (!IsConsumerNameValid(con, bill.ConsumerNumber, bill.ConsumerName))
+                {
+                    throw new Exception("Consumer number already exists with a different name.");
+                }
 
-                command.Parameters.AddWithValue("@consumerNumber", ebill.ConsumerNumber);
-                command.Parameters.AddWithValue("@consumerName", ebill.ConsumerName);
-                command.Parameters.AddWithValue("@unitsConsumed", ebill.UnitsConsumed);
-                command.Parameters.AddWithValue("@billAmount", ebill.BillAmount);
+                if (IsDuplicateBill(con, bill.ConsumerNumber, bill.BillMonth, bill.BillYear))
+                {
+                    throw new Exception("Bill for this consumer already exists for the selected month and year.");
+                }
 
-                connection.Open();
-                command.ExecuteNonQuery();
-                connection.Close();
+                string query = @"INSERT INTO ElectricityBill
+                         (consumer_number, consumer_name, units_consumed, bill_amount, BillMonth, BillYear)
+                         VALUES (@cno, @cname, @units, @amount, @month, @year)";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@cno", bill.ConsumerNumber);
+                cmd.Parameters.AddWithValue("@cname", bill.ConsumerName);
+                cmd.Parameters.AddWithValue("@units", bill.UnitsConsumed);
+                cmd.Parameters.AddWithValue("@amount", bill.BillAmount);
+                cmd.Parameters.AddWithValue("@month", bill.BillMonth);
+                cmd.Parameters.AddWithValue("@year", bill.BillYear);
+
+                cmd.ExecuteNonQuery();
             }
         }
+
+        public List<ElectricityBill> GetBillsByConsumerAndYear(string consumerNumber, int year)
+        {
+            List<ElectricityBill> bills = new List<ElectricityBill>();
+            DBHandler db = new DBHandler();
+
+            using (SqlConnection con = db.GetConnection())
+            {
+                string query = @"SELECT * FROM ElectricityBill
+                         WHERE consumer_number = @cno AND BillYear = @year";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@cno", consumerNumber);
+                cmd.Parameters.AddWithValue("@year", year);
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    ElectricityBill bill = new ElectricityBill();
+                    bill.ConsumerNumber = reader["consumer_number"].ToString();
+                    bill.ConsumerName = reader["consumer_name"].ToString();
+                    bill.UnitsConsumed = Convert.ToInt32(reader["units_consumed"]);
+                    bill.BillAmount = Convert.ToDouble(reader["bill_amount"]);
+                    bill.BillMonth = reader["BillMonth"].ToString();
+                    bill.BillYear = Convert.ToInt32(reader["BillYear"]);
+
+                    bills.Add(bill);
+                }
+            }
+            return bills;
+        }
+
+
 
         public List<ElectricityBill> Generate_N_BillDetails(int num)
         {
@@ -83,8 +128,9 @@ namespace ElectricityBillingAutomation
             using (SqlConnection connection = dbHandler.GetConnection())
             {
                 string selectQuery =
-                    "SELECT TOP (@count) consumer_number, consumer_name, units_consumed, bill_amount " +
-                    "FROM ElectricityBill ORDER BY consumer_number DESC";
+                    "SELECT TOP (@count) consumer_number, consumer_name, units_consumed, bill_amount\r\n " +
+                    "FROM ElectricityBill\r\n" +
+                    "ORDER BY consumer_number DESC\r\n";
 
                 SqlCommand command = new SqlCommand(selectQuery, connection);
                 command.Parameters.AddWithValue("@count", num);
@@ -111,6 +157,37 @@ namespace ElectricityBillingAutomation
 
             return billList;
         }
+
+        private bool IsConsumerNameValid(SqlConnection connection, string consumerNumber, string consumerName)
+        {
+            string query = "SELECT consumer_name FROM ElectricityBill WHERE consumer_number = @cno";
+
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@cno", consumerNumber);
+
+            object result = cmd.ExecuteScalar();
+
+            if (result == null)
+                return true;
+
+            return result.ToString().Equals(consumerName, StringComparison.OrdinalIgnoreCase);
+        }
+
+        private bool IsDuplicateBill(SqlConnection connection, string consumerNumber, string month, int year)
+        {
+            string query = @"SELECT COUNT(*) FROM ElectricityBill 
+                     WHERE consumer_number = @cno AND BillMonth = @month AND BillYear = @year";
+
+            SqlCommand cmd = new SqlCommand(query, connection);
+            cmd.Parameters.AddWithValue("@cno", consumerNumber);
+            cmd.Parameters.AddWithValue("@month", month);
+            cmd.Parameters.AddWithValue("@year", year);
+
+            int count = (int)cmd.ExecuteScalar();
+            return count > 0;
+        }
+
+
 
 
     }
