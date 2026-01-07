@@ -1,8 +1,0 @@
-C:\ASP.Net_Training\Struct_n_Enums\obj\Debug\Struct_n_Enums.csproj.AssemblyReference.cache
-C:\ASP.Net_Training\Struct_n_Enums\obj\Debug\Struct_n_Enums.csproj.CoreCompileInputs.cache
-C:\ASP.Net_Training\Struct_n_Enums\bin\Debug\Struct_n_Enums.exe.config
-C:\ASP.Net_Training\Struct_n_Enums\bin\Debug\Struct_n_Enums.exe
-C:\ASP.Net_Training\Struct_n_Enums\bin\Debug\Struct_n_Enums.pdb
-C:\ASP.Net_Training\Struct_n_Enums\obj\Debug\Struct_n_Enums.exe
-C:\ASP.Net_Training\Struct_n_Enums\obj\Debug\Struct_n_Enums.pdb
-C:\ASP.Net_Training\Struct_n_Enums\obj\Debug\Struct_n_Enums.exe.config
